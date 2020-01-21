@@ -21,20 +21,20 @@
       			<div class="col-md-12">
   				
 					<div class="card-body font-weight-bold">
-						<form>
+						<form method="POST" action="processa_envio.php">
 							<div class="form-group">
 								<label for="para">Para</label>
-								<input type="text" class="form-control" id="para" placeholder="joao@dominio.com.br">
+								<input type="text" name="para" class="form-control" id="para" placeholder="joao@dominio.com.br">
 							</div>
 
 							<div class="form-group">
 								<label for="assunto">Assunto</label>
-								<input type="text" class="form-control" id="assunto" placeholder="Assundo do e-mail">
+								<input type="text" name="assunto" class="form-control" id="assunto" placeholder="Assundo do e-mail">
 							</div>
 
 							<div class="form-group">
 								<label for="mensagem">Mensagem</label>
-								<textarea class="form-control" id="mensagem"></textarea>
+								<textarea  name="mensagem" class="form-control" id="mensagem"></textarea>
 							</div>
 
 							<button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
